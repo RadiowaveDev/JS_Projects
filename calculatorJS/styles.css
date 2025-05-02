@@ -1,0 +1,66 @@
+*{
+    font-family: 'Fraunces',serif;
+    color: hsl(0, 0%, 100%);
+}
+body{
+    margin: 0;
+    background-color:hsl(0, 0%, 91%) ;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+}
+.calculator{
+    display: grid;
+    grid-template-columns: repeat(4,75px);
+    grid-template-rows: 160px repeat(5,75px);
+    background-color: #8296c4;
+    padding: 15px;
+    border-radius:32px;
+    box-shadow: 15px 10px 0p 5px #000033;
+}
+button{
+    cursor: pointer;
+    margin: 5px;
+    padding: 0;
+    border-radius: 15px;
+    font-size: 1.5em;
+    border:none;
+    color:#000;
+    box-shadow: 5px 5px 10px -3px #000033,-5px -5px 15px #00ffc11f;
+    height: 60px;
+}
+
+button:active{
+    background-color: hsl(0, 0%, 80%);
+}
+button:focus{
+    outline: none;
+}
+.operator{
+    background-color: #ec7322;
+}
+.col-2{
+    grid-column: span 2;
+}
+.display{
+    grid-column: 1/-1;  /*Dar el ancho total del padre */
+    padding: 18px;
+    margin: 10px 10px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    background-color: #000;
+    border-radius: 15px;
+    text-align: right;
+    justify-content: space-between;
+    word-break: break-all;
+}
+#current-value{
+    font-size: 1.5em;
+}
+#previous-value{
+    font-size: 2em;
+}
