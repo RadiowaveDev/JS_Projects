@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <title>Lista de tareas</title>
+</head>
+<body>
+    <main>
+        <div class="list rounBounder">
+            <div class="date">
+                <div class="dateRight">
+                    <div id="dateNumber"></div>
+                    <div>
+                        <div id="dateMonth"></div>
+                        <div id="dateYear"></div>
+                    </div>
+                </div>
+                <div id="dateText"></div>
+            </div>
+            <form onsubmit="addNewTask(event)">
+                <input type="text" autocomplete="off" placeholder="Nueva Tarea" class="roundBorder" name="taskText">
+                <button type="submit" class="addTaskButton" id="addTask">+</button>
+                <button type="button" class="orderButton roundBounder" onclick="renderOrderedTasks()">Ordenar</button>
+            </form>
+            <div id="taskContainer"></div>
+        </div>
+    </main>
+    <script src="/script.js"></script>
+</body>
+</html>

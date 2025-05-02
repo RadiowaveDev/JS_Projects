@@ -1,0 +1,123 @@
+:root{
+ --primary:#A5C882;
+ --secondary:#D33F49;
+ --light:#fff;
+ --dark:#000;
+ --disabled:#e7e7e7;
+ --completed: #08352e;
+ --erase: #541f08;
+}
+
+body{
+    font-family: 'Lato',sans-serif;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--disabled);
+}
+:first-letter{
+    text-transform: capitalize;
+}
+.roundBorder{
+    border-radius: 5px;
+}
+.list{
+    margin: 25px auto;
+    padding: 25px;
+    background-color: var(--light);
+    width: 100%;
+    max-width: 350px;
+}
+.date{
+    display: flex;  /*Elemento padre hereda posicion fila */
+    align-items: center;
+    justify-content: space-between;
+}
+.dateRight{
+    display: flex;
+    align-items: center;
+}
+#dateNumber{
+    font-size: 50px;
+}
+#dateText{
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+#dateMonth, #dateYear{
+    margin-left: 7px;
+    font-size: 20px;
+}
+
+form{
+    margin: 20px 0;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: auto 36px auto;
+    grid-column-gap:15px;
+}
+input{
+    border:none;
+    padding-left: 10px;
+    background-color: var(--disabled);
+}
+input:focus{
+    outline: none;
+}
+.addTaskButton, .orderButton{
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+.addTaskButton{
+    height: 35px;
+    border-radius: 50%;
+    font-size: 18px;
+    background-color: var(--disabled);
+}
+.orderButton{
+    background-color: var(--secondary);
+    color: var(--light);
+    border-radius: 10%;
+}
+.task{
+    background-color: var(--primary);
+    color: var(--light);
+    padding: 15px;
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between; /* Asegura que los elementos se distribuyan bien */
+    align-items: center; /* Centra verticalmente los elementos dentro del contenedor */
+    flex-wrap: wrap; /* Permite que los elementos internos se ajusten si es necesario */
+    width: 100%; /* Asegura que el contenedor ocupe todo el espacio disponible */
+    box-sizing: border-box; /* Asegura que los rellenos no afecten el tamaño total */
+}
+.task .p{
+    flex-grow: 1; /* Permite que el <p> ocupe todo el espacio disponible */
+    text-align: right; /* Alinea el texto a la derecha */
+    white-space: normal; /* Permite que el texto se divida en varias líneas si es necesario */
+    word-wrap: break-word; /* Asegura que las palabras largas se dividan correctamente si es necesario */
+    margin: 0;
+}
+.icons{
+    display: flex;
+    gap: 5px; /* Espacio entre los íconos */
+    order: 1;
+}
+.done{
+    background-color: var(--disabled);
+    text-decoration: line-through;
+    color:var(--dark);
+}
+i{
+    padding: 10px;
+    cursor: pointer;
+}
+.icon-complete{
+    color: var(--completed);
+}
+.icon-erase{
+    color: var(--erase);
+}
+.icon-complete:hover, .icon-erase:hover{
+    color:var(--light);
+}
