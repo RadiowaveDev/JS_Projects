@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="esp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokédex de Hoenn</title>
+    <link rel="stylesheet" href="/CSS/styles_dex.css">
+</head>
+<body>
+    <header>
+        <nav class="nav">
+            <img src="/img/pokedex-logo.png" alt="logo-Pokedex">
+            <ul class="nav-list">
+                <li class="nav-item"><button class="btn btn-header" id="ver-todos">Ver todos</button></li>
+                <li class="nav-item"><button class="btn btn-header normal" id="normal">Normal</button></li>
+                <li class="nav-item"><button class="btn btn-header grass" id="grass">Planta</button></li>
+                <li class="nav-item"><button class="btn btn-header water" id="water">Agua</button></li>
+                <li class="nav-item"><button class="btn btn-header fire" id="fire">Fuego</button></li>
+                <li class="nav-item"><button class="btn btn-header electric" id="electric">Eléctrico</button></li>
+                <li class="nav-item"><button class="btn btn-header fighting" id="fighting">Lucha</button></li>
+                <li class="nav-item"><button class="btn btn-header poison" id="poison">Veneno</button></li>
+                <li class="nav-item"><button class="btn btn-header ground" id="ground">Tierra</button></li>
+                <li class="nav-item"><button class="btn btn-header flying" id="flying">Volador</button></li>
+                <li class="nav-item"><button class="btn btn-header psychic" id="psychic">Psiquico</button></li>
+                <li class="nav-item"><button class="btn btn-header bug" id="bug">Bicho</button></li>
+                <li class="nav-item"><button class="btn btn-header rock" id="rock">Roca</button></li>
+                <li class="nav-item"><button class="btn btn-header ghost" id="ghost">Fantasma</button></li>
+                <li class="nav-item"><button class="btn btn-header dark" id="dark">Siniestro</button></li>
+                <li class="nav-item"><button class="btn btn-header ice" id="ice">Hielo</button></li>
+                <li class="nav-item"><button class="btn btn-header dragon" id="dragon">Dragon</button></li>
+                <li class="nav-item"><button class="btn btn-header steel" id="steel">Acero</button></li>
+                <li class="nav-item"><button class="btn btn-header fairy" id="fairy">Hada</button></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="todos">
+            <div class="pokemon-todos" id="listaPokemon">
+                <div class="pokemon">
+                    <p class="pokemon-id-back">#252</p>
+                    <div class="pokemon-imagen">
+                        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/252.png" alt="Treecko">
+                    </div>
+                    <div class="pokemon-info">
+                        <div class="nombre-contenedor">
+                            <p class="pokemon-id">#252</p>
+                            <h2 class="pokemon-nombre">Treecko</h2>
+                        </div>
+                        <div class="pokemon-tipos">
+                            <p class="grass tipo">GRASS</p>
+                            <p class="dragon tipo">DRAGON</p>
+                        </div>
+                        <div class="pokemon-habilidades">
+                            <p class="habilidad 1">OVERGROW</p>
+                            <p class="habilidad 2">UNBURDEN</p>
+                        </div>
+                    </div>
+                </div>    
+            </div>    
+        </div>
+    </main>
+
+    <script src="/JS/script_pokedex.js"></script>
+</body>
+</html>
